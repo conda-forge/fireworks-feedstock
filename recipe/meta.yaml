@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
@@ -35,7 +35,7 @@ requirements:
     - paramiko >=2.4.2
     - requests >=2.01
     - fabric >=2.3.1
-    - matplotlib >=2.0.1
+    - matplotlib-base >=2.0.1
     - python-igraph >=0.7.1
 
 test:
