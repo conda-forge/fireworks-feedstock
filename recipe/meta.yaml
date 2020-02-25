@@ -41,6 +41,8 @@ requirements:
 test:
   imports:
     - fireworks
+  commands:
+    - pip check
 
 about:
   home: https://materialsproject.github.io/fireworks
