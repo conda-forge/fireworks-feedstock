@@ -21,6 +21,7 @@ requirements:
     - setuptools
   run:
     - python >=3.7
+    - pip
     - ruamel.yaml >=0.15.35
     - pymongo >=3.3.0
     - Jinja2 >=2.8.0
