@@ -5,7 +5,7 @@ Home: https://materialsproject.github.io/fireworks
 
 Package license: BSD-3-Clause-LBNL
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: The Fireworks Workflow Management Repo.
 

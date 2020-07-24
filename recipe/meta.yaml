@@ -1,5 +1,5 @@
 {% set name = "FireWorks" %}
-{% set version = "1.9.5" %}
+{% set version = "1.9.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 441e1bfa70e2612173eb153421c6e240b2687c471e179458c88e32482afedf80
+  sha256: 8b1e4cb3816c5c047e28165df2a860f982899575c0e32d413ae669320aabe64f
 
 build:
   noarch: python
-  number: 1
-  script: "{{ PYTHON }} -m pip install . -vv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -50,7 +50,7 @@ about:
   license: BSD-3-Clause-LBNL
   license_family: BSD
   license_file: LICENSE
-  summary: 'The Fireworks Workflow Management Repo.'
+  summary: The Fireworks Workflow Management Repo.
 
   description: |
     FireWorks stores, executes, and manages calculation workflows.
