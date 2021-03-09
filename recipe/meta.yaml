@@ -1,5 +1,5 @@
 {% set name = "FireWorks" %}
-{% set version = "1.9.6" %}
+{% set version = "1.9.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8b1e4cb3816c5c047e28165df2a860f982899575c0e32d413ae669320aabe64f
+  sha256: 85181329874a9973f28784a04b2339b6fd4afe78bf264fd3211682eeb2e50cfe
 
 build:
   noarch: python
@@ -34,6 +34,7 @@ requirements:
     - gunicorn >=19.6.0
     - tqdm >=4.8.4
     - paramiko >=2.4.2
+    - pathlib2
     - requests >=2.01
     - fabric >=2.3.1
     - matplotlib-base >=2.0.1
