@@ -1,5 +1,5 @@
 {% set name = "FireWorks" %}
-{% set version = "1.9.7" %}
+{% set version = "1.9.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 85181329874a9973f28784a04b2339b6fd4afe78bf264fd3211682eeb2e50cfe
+  sha256: d5ef2176a650eead22ca1d2fd09bfcf17283748ccfb03e7224c3fc8acb3835a0
 
 build:
   noarch: python
@@ -39,6 +39,7 @@ requirements:
     - fabric >=2.3.1
     - matplotlib-base >=2.0.1
     - python-igraph >=0.7.1
+    - importlib-metadata
 
 test:
   imports:
