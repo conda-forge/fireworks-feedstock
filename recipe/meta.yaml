@@ -1,5 +1,5 @@
 {% set name = "FireWorks" %}
-{% set version = "2.0.4" %}
+{% set version = "2.0.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | lower }}-{{ version }}.tar.gz
-  sha256: ebf08bda83fd512cac814af41bf4c4c50cb22ff0b38faedcf5eefac37deaaa2e
+  sha256: e586580fbaf289d6dcdd3642aebc7406e7736523eaefe4387b97714ea4a3292a
 
 build:
   noarch: python
@@ -40,6 +40,7 @@ requirements:
     - matplotlib-base >=2.0.1
     - python-igraph >=0.7.1
     - importlib-metadata
+    - cryptography <46
 
 test:
   requires:
