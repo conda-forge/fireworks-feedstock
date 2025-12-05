@@ -1,5 +1,5 @@
 {% set name = "FireWorks" %}
-{% set version = "2.0.6" %}
+{% set version = "2.0.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | lower }}-{{ version }}.tar.gz
-  sha256: 3edfc9babfe8bb77501e303a516377898ba78dd1a6efc3b11cec74c88d9ebb03
+  sha256: 2c7cc91baa2eb3f3518d78e97a78bc46116885d72d465e4aeef9b0dca320187a
 
 build:
   noarch: python
