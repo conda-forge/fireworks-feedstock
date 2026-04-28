@@ -15,7 +15,6 @@ Documentation: https://materialsproject.github.io/fireworks/
 
 FireWorks stores, executes, and manages calculation workflows.
 
-
 Current build status
 ====================
 
